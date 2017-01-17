@@ -7,7 +7,7 @@ Credit goes to the kind contributors of JPSVolumeButtonHandler, which does all t
 
 Notice some [issues](https://github.com/jpsim/JPSVolumeButtonHandler/issues/37) with volume levels that JPSVolumeButtonHandler seems to irrevocably affect.
 
-Also notice that I occasionally end up with two instances of the underlying handler, when I/the user quits my app while physical button support is both enabled and on. This seems to gave to do with some OS-internal notifications not being properly removed. There is nothing I can do about it in my wrapper. This is the description in my user guide, how to get things back to normal:
+Also notice that I occasionally end up with two instances of the underlying handler, when I/the user quits my app while physical button support is both enabled and on. This seems to have to do with some OS-internal notifications not being properly removed. There is nothing I can do about it in my wrapper. This is the description in my user guide, how to get things back to normal:
 
 > In exceptional circumstance, the app may not get a chance to properly switch volume button handling off outside the Stopwatch view. This may be the case, for example, if you completely quit the app while a timing is in progress and physical button support is enabled. It may also happen, when you restart your iPhone, or when you use two timing apps with active physical button support at the same time such as this app and our smart ski & rally car timing app.
 > 
@@ -21,3 +21,5 @@ Also notice that I occasionally end up with two instances of the underlying hand
 > 
 > If you recognize the problem only while an important timing is already in progress, delete the extra time record and use the virtual start/split button only for the remainder of this timing.
 
+
+From Settings > User Guide > "Option: Physical Button Support" in [the next-generation sports stopwatch app](https://itunes.apple.com/app/herotime-smart-multi-stopwatch/id1072873744?mt=8) (see also [here](http://smartstopwatch.com) for more) - just in case you want to see how the wrapper is supposed to work in action.
