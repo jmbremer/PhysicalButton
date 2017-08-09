@@ -54,6 +54,7 @@ class PhysicalButton: CustomDebugStringConvertible {
                 } else {
                     // This is supported by Swift:
                     isInUse = false
+                    volumeButtonHandler = nil 
                 }
             }
         }
